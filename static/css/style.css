@@ -1,0 +1,20 @@
+body {
+    background-color: #fdf902; 
+    color: #0066ff; 
+}
+
+.leader {
+    border: none;
+    border-top: 2px solid blue;
+    margin: 20px 0;
+}
+
+.dashed-line {
+    border: none;
+    border-top: 2px dashed purple; /* Color of the dashed line */
+    margin: 10px 0; /* Adjust margin as needed */
+}
+
+.left-margin {
+    margin-left: 30px; /* Adjust the value as needed */
+}

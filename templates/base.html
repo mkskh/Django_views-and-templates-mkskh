@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"> 
+    <!-- DON'T forget setting - STATIC_URL, STATICFILES_DIRS and INSTALLED_APPS -->
+    <style>
+        .leader {
+            border: none;
+            border-top: 2px solid blue;
+            margin: 20px 0;
+        }
+
+        .dashed-line {
+            border: none;
+            border-top: 2px dashed purple; /* Color of the dashed line */
+            margin: 10px 0; /* Adjust margin as needed */
+        }
+
+        .left-margin {
+            margin-left: 30px; /* Adjust the value as needed */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="/notes">My Course Notes</a>
+        </li>
+        <li>    
+            <a href="">My ToDo List</a>
+        </li>
+    </ul>
+    <hr class="leader">
+</header>
+
+<main>
+    {% block content %}
+
+    {% endblock %}
+</main>
+
+<footer>
+    <hr class="dashed-line">
+    <p class="left-margin">© to me! I am not using any cookies ... yet!</p>
+</footer>
+
+</body>
+</html>

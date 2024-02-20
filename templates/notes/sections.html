@@ -1,0 +1,16 @@
+{% extends 'base_notes.html' %}
+
+
+{% block content %}
+
+<h2>Browse my notes by section</h2>
+<ol>
+    <li><a href="{% url 'notes:by_section' 'Web Frameworks' %}">Web Frameworks</a></li>
+    <li><a href="{% url 'notes:by_section' 'Setting up Django' %}">Setting up Django</a></li>
+    <li><a href="{% url 'notes:by_section' 'URL Mapping' %}">URL Mapping</a></li>
+</ol>
+
+
+<a href="{% url 'notes:home' %}">Back to home</a>
+
+{% endblock %}

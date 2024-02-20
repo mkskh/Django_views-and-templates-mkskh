@@ -1,0 +1,14 @@
+{% extends 'base_notes.html' %}
+
+
+{% block content %}
+
+<h2>Notes about {{section_name}}</h2>
+<ul>
+    {% for note in notes %} 
+        <li>{{ note }}</li>
+    {% endfor %}
+</ul>
+<a href="{{ back_sections }}">Back to sections</a>
+
+{% endblock %}

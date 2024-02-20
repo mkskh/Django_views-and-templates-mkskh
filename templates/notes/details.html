@@ -1,0 +1,21 @@
+{% extends 'base_notes.html' %}
+
+
+{% block content %}
+
+<h2>Note number {{ id }}</h2>
+<h3>{{ note.section }}</h3>
+<p>{{ note.text }}</p>
+{% if previous_note %}
+    <a href="{% url 'notes:details' previous_note %}">Previous note</a>
+{% else %}
+    <span style="color: rgb(0, 0, 0);">Previous note</span>
+{% endif %}
+
+{% if next_note %}
+    <a href="{% url 'notes:details' next_note %}">Next note</a>
+{% else %}
+    <span style="color: rgb(0, 0, 0);">Next note</span>
+{% endif %}
+
+{% endblock %}

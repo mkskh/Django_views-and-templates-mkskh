@@ -1,0 +1,16 @@
+{% extends 'base_notes.html' %}
+{% load my_tags %}
+
+
+{% block content %}
+
+<h2>Notes matching {{ term }}</h2>
+
+<ul>
+    {% for section, text in result %}
+        <li>{{ text }}</li>
+        <em>Filed under section</em> {{ section|linkable_section|safe }}
+    {% endfor %}
+</ul>
+
+{% endblock %}
