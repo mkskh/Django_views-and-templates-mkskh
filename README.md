@@ -1,19 +1,18 @@
 # views-and-templates-mkskh Exercise-Project
 
-## Consists from 5 tasks:
+## Consists of 5 tasks:
 
 ### task1
 ![t1](task1_result.png)
 
+### task2
+![t2](task2_result.png)
 
-### Home page
-![login](./images/login2.png)
+### task3
+![t3](task3_result.gif)
 
-### View page
-![view](./images/view.png)
+### task4
+![t4](task4_1_result.gif)
 
-### Create page
-![create](./images/create2.png)
-
-### Edit page
-![edit](./images/edit2.png)
+### task5
+![t5](task5_result.gif)
